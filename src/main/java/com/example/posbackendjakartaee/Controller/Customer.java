@@ -50,4 +50,36 @@ public class Customer extends HttpServlet {
                 }
             }
     }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        var id = req.getParameter("id");
+        try (Writer writer=resp.getWriter()){
+            CustomerDAOIMPL customerDAOIMPL = new CustomerDAOIMPL();
+            try {
+                if (customerDAOIMPL.deleteCustomer(id,connection)){
+                    writer.write("student deleted");
+                }else{
+                    writer.write("student delete failed");
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
+    }
+
+    @Override
+    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        try (Writer writer=resp.getWriter()){
+            var CID =req.getParameter("id");
+            var jsonb = JsonbBuilder.create();
+            var customerDAOIMPL = new CustomerDAOIMPL();
+            var customerDTO = jsonb.fromJson(req.getReader(), CustomerDTO.class);
+            if (customerDAOIMPL.updateCustomer(CID,customerDTO,connection)){
+                writer.write("customer updated successfully");
+            }else{
+                writer.write("something went wrong");
+            }
+        }
+    }
 }

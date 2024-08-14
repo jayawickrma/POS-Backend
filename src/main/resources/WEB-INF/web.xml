@@ -10,7 +10,7 @@
 
     <context-param>
         <param-name>dbURL</param-name>
-        <param-value>jdbc:mysql://localhost:3306/posbackend</param-value>
+        <param-value>jdbc:mysql://localhost:3306/posbackend?createDatabaseIfNotExist=true</param-value>
     </context-param>
 
     <context-param>
@@ -22,8 +22,8 @@
         <param-name>dbPassword</param-name>
         <param-value>Ijse@1234</param-value>
     </context-param>
-    <context-param>
-        <param-name>origin</param-name>
-        <param-value>http://localhost:63342</param-value>
-    </context-param>
+<!--    <context-param>-->
+<!--        <param-name>origin</param-name>-->
+<!--        <param-value>http://localhost:63342</param-value>-->
+<!--    </context-param>-->
 </web-app>
