@@ -1,9 +1,7 @@
 package com.example.posbackendjakartaee.Controller;
 
 import com.example.posbackendjakartaee.DTO.CustomerDTO;
-import com.example.posbackendjakartaee.Dao.CustomerDao;
 import com.example.posbackendjakartaee.Dao.IMPL.CustomerDAOIMPL;
-import jakarta.json.bind.Jsonb;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -17,7 +15,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 @WebServlet(urlPatterns = ("/customer"))
-public class Customer extends HttpServlet {
+public class CustomerController extends HttpServlet {
     Connection connection;
     public void init() throws ServletException {
         try {
