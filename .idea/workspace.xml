@@ -10,12 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e67456be-5061-4986-a875-9d67c3cb9597" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Controller/ItemController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/DTO/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Dao/IMPL/ItemDAOIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Dao/ItemDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Controller/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/posbackendjakartaee/Controller/ItemController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +181,7 @@
       <updated>1723654063459</updated>
       <workItem from="1723654064822" duration="3841000" />
       <workItem from="1723664172551" duration="4618000" />
-      <workItem from="1723739594762" duration="1995000" />
+      <workItem from="1723739594762" duration="3677000" />
     </task>
     <task id="LOCAL-00001" summary="creating database and classes">
       <created>1723655142411</created>
@@ -215,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1723667695306</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="created item files and have to do something">
+      <created>1723742563961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723742563961</updated>
+    </task>
+    <task id="LOCAL-00006" summary="created item files and have to do something">
+      <created>1723743938231</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1723743938231</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +236,7 @@
     <MESSAGE value="creating database and classes" />
     <MESSAGE value="customer side" />
     <MESSAGE value="customer side done" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer side done" />
+    <MESSAGE value="created item files and have to do something" />
+    <option name="LAST_COMMIT_MESSAGE" value="created item files and have to do something" />
   </component>
 </project>
