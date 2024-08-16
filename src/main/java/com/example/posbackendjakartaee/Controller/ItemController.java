@@ -10,14 +10,29 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+import javax.sql.DataSource;
 import java.io.IOException;
 import java.io.Writer;
 import java.sql.Connection;
+import java.sql.SQLException;
 
 
 @WebServlet(urlPatterns = "/item")
 public class ItemController extends HttpServlet {
     Connection connection;
+    public void init() throws ServletException {
+        try {
+            var ctx = new InitialContext();
+            DataSource pool= (DataSource) ctx.lookup("java:comp/env/jdbc/stuRegistration");
+            this.connection=pool.getConnection();
+//            Class.forName(driverCalss);
+//           this.connection =  DriverManager.getConnection(dbUrl,userName,password);
+        }catch (NamingException | SQLException e){
+            e.printStackTrace();
+        }
+    }
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         super.doGet(req, resp);
