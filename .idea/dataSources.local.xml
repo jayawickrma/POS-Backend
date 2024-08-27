@@ -13,7 +13,7 @@
         <introspection-scope>
           <node kind="schema">
             <name qname="@" />
-            <name qname="posbackend" />
+            <name qname="javaee_pos" />
           </node>
         </introspection-scope>
       </schema-mapping>
